@@ -15,12 +15,7 @@ function AddToDo({onCreate}){
         <form  onSubmit={submitHandler}>
             <input value={value} onChange={event => setValue(event.target.value)}/>
             <button type='submit'>add to do list </button>
-            <div className='select'>
-                <select name='todos' className='filter-todo'>
-                    <option value='completed'>Completed</option>
-                    <option value='uncompleted'>Uncompleted</option>
-                </select>
-            </div>
+
         </form>
 
     )
